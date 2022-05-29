@@ -1,2 +1,6 @@
-# Znaczenie_Slang-w
-Want to know any slang meaning in Polish langauge, so far....?
+# Polish Slangs Scaper Project
+
+# Scraper using bs4 and requests libary to get meaning of slang in Polish language.
+
+
+
