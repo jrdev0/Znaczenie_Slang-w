@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 def pobranie_strony(co_to):
 
-    headers = {'User_Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:85.0) Gecko/20100101 Firefox/85.0'}
+    headers = {'User_Agent': 'your user agent'}
     wyszukaj = f'https://www.miejski.pl/slowo-{co_to}'
     r = requests.get(wyszukaj, headers)
     soup = BeautifulSoup(r.content, 'html.parser')
@@ -16,7 +16,7 @@ def slang(soup):
     lista = []
     opis = soup.find_all('main')
     for op in opis:
-        # MOZE DO UZYTKU W POZNIEJSZYM CZASIE
+        # mayby to use in future...
 
         slowo = op.find('h1').text
     #     try:
